@@ -1,0 +1,30 @@
+@import 'fonts/fira_code.css';
+
+.CodeMirror {
+  min-height: 390px; /* 25 lines */
+  font-size: 12px !important;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+}
+
+.code * {
+  font-family: 'Fira Regular' !important;
+  font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05";
+}
+
+#inputDiv {
+  height: 90%;
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+}
+
+#outputDiv {
+  height: 90%;
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+  font-family: Consolas, monaco, monospace;
+  white-space: pre-line;
+  text-align: center;
+}
