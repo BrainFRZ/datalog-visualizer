@@ -35,7 +35,7 @@ class App extends React.Component {
 
     await axios
       .post('http://harp.greymud.com/replapi/bakeSouffle', data)
-      .then(res => this.setState({ replResponse: res.data }))
+      .then(res => this.setState({ replResponse: JSON.stringify(res.data) }))
       .catch(err => console.log(err));    
   }
 
